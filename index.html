@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Storage</title>
+</head>
+<body>
+    <h1>Upload Media</h1>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        <label for="media-title">Media Title:</label>
+        <input type="text" id="media-title" name="media-title" required>
+        <br><br>
+        <label for="media-file">Media File:</label>
+        <input type="file" id="media-file" name="media-file" accept="audio/*,video/*" required>
+        <br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
